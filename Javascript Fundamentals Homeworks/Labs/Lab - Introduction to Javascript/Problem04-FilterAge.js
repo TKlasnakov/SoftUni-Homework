@@ -12,16 +12,10 @@ function solve(minAge, firstName, firstAge, secondName, secondAge) {
         name: secondName,
         age: secondAge
     };
-
-    if (firstPerson.age >= minAge && secondPerson.age >= minAge) {
-        if (firstPerson.age < secondPerson.age) {
-            console.log(secondPerson);
-        } else {
-            console.log(firstPerson);
-        }
-    } else if (firstPerson.age >= minAge) {
+    if (minAge <= firstPerson.age) {
         console.log(firstPerson);
-    } else if (secondPerson.age >= minAge) {
+    }
+    if (minAge <= secondPerson.age) {
         console.log(secondPerson);
     }
 }
