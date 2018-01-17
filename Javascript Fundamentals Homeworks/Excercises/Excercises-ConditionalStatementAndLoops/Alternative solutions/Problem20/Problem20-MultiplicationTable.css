@@ -1,0 +1,14 @@
+#multiplication-number-form-wrapper {
+    margin: 20px;
+}
+.first-rows, .first-cols {
+    background-color: yellowgreen;
+    width: 30px;
+    height: 30px;
+}
+.results {
+    background-color: forestgreen;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
