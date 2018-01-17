@@ -2,9 +2,9 @@
  * Created by todork on 1/17/2018.
  */
 function solve(input) {
-    let rowStr = '<table>';
+    console.log('<table>');
     for (let row = 0; row <= input; row++) {
-        rowStr += '<tr>';
+        let rowStr = '<tr>';
         for (let col = 0; col <= input; col++) {
             if (row === 0 && col === 0) {
                 rowStr += `<th>x</th>`
@@ -16,11 +16,11 @@ function solve(input) {
                 rowStr += `<th>${col * row}</th>`
             }
         }
-        rowStr += '</tr>';
+        console.log(rowStr);
+        console.log('</tr>');
     }
-    rowStr +='</table>';
 
-    console.log(rowStr)
+    console.log('</table>');
 }
 
-solve(10);
+solve(5);
