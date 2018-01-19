@@ -2,7 +2,8 @@
  * Created by todork on 1/16/2018.
  */
 
-function solve(x, y, xMin, xMax, yMin, yMax) {
+function solve(input) {
+    let [x, y, xMin, xMax, yMin, yMax] = input.map(Number);
     if (xMin <= x && yMin <= y && xMax >= x && yMax >= y) {
         console.log('inside');
     } else {
@@ -10,4 +11,4 @@ function solve(x, y, xMin, xMax, yMin, yMax) {
     }
 }
 
-solve(12.5, -1, 2, 12, -3, 3);
+solve([12.5, -1, 2, 12, -3, 3]);

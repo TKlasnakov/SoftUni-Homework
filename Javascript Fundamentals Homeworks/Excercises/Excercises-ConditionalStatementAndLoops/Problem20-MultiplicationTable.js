@@ -2,7 +2,7 @@
  * Created by todork on 1/17/2018.
  */
 function solve(input) {
-    console.log('<table>');
+    console.log('<table border="1">');
     for (let row = 0; row <= input; row++) {
         let rowStr = '<tr>';
         for (let col = 0; col <= input; col++) {
@@ -13,7 +13,7 @@ function solve(input) {
             } else if (row === 0) {
                 rowStr += `<th>${col}</th>`
             } else {
-                rowStr += `<th>${col * row}</th>`
+                rowStr += `<td>${col * row}</td>`
             }
         }
         console.log(rowStr);

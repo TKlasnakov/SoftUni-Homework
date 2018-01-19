@@ -4,7 +4,7 @@
 function solve(input) {
     let feet = parseInt(input /12);
     let inches = input % 12;
-    console.log(`${feet}'-${inches}''`)
+    console.log(`${feet}'-${inches}"`)
 }
 
 solve(11);

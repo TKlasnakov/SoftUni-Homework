@@ -9,7 +9,6 @@ function solve(input) {
     } else {
         console.log(input[2]);
     }
-
 }
 
 solve([-10, -20, -30]);

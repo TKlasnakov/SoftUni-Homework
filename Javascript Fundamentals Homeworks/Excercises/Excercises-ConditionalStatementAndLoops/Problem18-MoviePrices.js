@@ -2,19 +2,20 @@
  * Created by todork on 1/16/2018.
  */
 
-function solve(movie, day) {
-    let dayOfTheMovie = day.toLowerCase();
+function solve(input) {
+    let dayOfTheMovie = input[1].toLowerCase() || '';
+    let movie = input[0].toLowerCase();
     let movieContainer = {
-        "The Godfather": {
+        "the godfather": {
             monday: 12,
             tuesday: 10,
             wednesday: 15,
             thursday: 12.5,
             friday: 15,
             saturday:25,
-            sunday: 25
+            sunday: 30
         },
-        "Schindler&'s List": {
+        "schindler's list": {
             monday: 8.5,
             tuesday: 8.5,
             wednesday: 8.5,
@@ -23,7 +24,7 @@ function solve(movie, day) {
             saturday:15,
             sunday: 15
         },
-        "Casablanca": {
+        "casablanca": {
             monday: 8,
             tuesday: 8,
             wednesday: 8,
@@ -32,7 +33,7 @@ function solve(movie, day) {
             saturday:10,
             sunday: 10
         },
-        "The Wizard of Oz": {
+        "the wizard of oz": {
             monday: 10,
             tuesday: 10,
             wednesday: 10,
@@ -50,4 +51,4 @@ function solve(movie, day) {
     }
 }
 
-solve('SoftUni', 'Nineday');
+solve(['SoftUni', 'Nineday']);
