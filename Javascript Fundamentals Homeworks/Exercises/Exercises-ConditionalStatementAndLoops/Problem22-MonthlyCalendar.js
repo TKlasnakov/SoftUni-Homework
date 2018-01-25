@@ -8,11 +8,13 @@ function createMonthlyCalendar(input) {
     let day = input[0];
     let month = input[1];
     let year = input[2];
+
     let today = new Date(year, month - 1, day).getDate();
     let lastMonthLastDay = new Date(year, month - 1, 0).getDate();
     let lastMonthLastDayOfTheWeek = new Date(year, month - 1, 0).getDay();
     let lastMonthLastSunday = new Date(year, month - 1, 0 - lastMonthLastDayOfTheWeek).getDate();
     let lastDayOfCurrentMonth = new Date(year, month, 0).getDate();
+
     let daysInTheLastWeek = lastMonthLastDay - lastMonthLastSunday + 1;
     let currentMonthCounter = 0;
     let daysInTheWeekCounter = 0;
