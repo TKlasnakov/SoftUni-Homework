@@ -3,10 +3,10 @@
  */
 
 function solve(str) {
-    let matcher = /[.,\/#!$%\^&\*;:{}=\-_`~()?\s]+/g;
-    let splitString = str.split(matcher).join(' ').toUpperCase();
+    let matcher = /\w+/g;
+    let words = str.match(matcher).join(', ').toUpperCase();
 
-    console.log(splitString)
+    console.log(words)
 }
 
-solve('Hi, how are you?');
+solve('Hi, how are you I am fine E?');

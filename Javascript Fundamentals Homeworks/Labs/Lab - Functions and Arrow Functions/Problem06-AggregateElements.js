@@ -15,8 +15,8 @@ function solve(input) {
     }
 
     console.log(sum);
-    console.log(inverseValueSum.toFixed(4));
-    console.log(parseInt(concat));
+    console.log(inverseValueSum);
+    console.log(concat);
 }
 
 solve([2, 4, 8, 16]);

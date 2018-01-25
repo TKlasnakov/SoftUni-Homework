@@ -4,12 +4,12 @@
 
 function solve(str) {
     let isPalindrome = str === reverseString(str);
-    
-    console.log(isPalindrome)
-}
 
-function reverseString(str) {
-    return str.split("").reverse().join("")
+    function reverseString(str) {
+        return str.split("").reverse().join("")
+    }
+
+    console.log(isPalindrome);
 }
 
 solve('asddsa');

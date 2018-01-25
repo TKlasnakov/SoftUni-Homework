@@ -6,7 +6,8 @@ function solve(n1, n2, operator) {
     let obj = {
         '+': sum(n1, n2),
         '*': multiply(n1, n2),
-        '/': devide(n1, n2)
+        '/': devide(n1, n2),
+        '-': minus(n1, n2)
     };
 
     function sum(n1, n2) {
@@ -21,9 +22,13 @@ function solve(n1, n2, operator) {
         return n1 / n2;
     }
 
+    function minus(n1, n2) {
+        return n1 - n2
+    }
+
     console.log(obj[operator])
 }
 
-solve(18, -1, '*');
+solve(1, -1, '-');
 
 
