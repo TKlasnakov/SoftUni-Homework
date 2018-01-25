@@ -30,6 +30,7 @@ function createMonthlyCalendar(input) {
         calendar += `<tr>`;
         for (let i = 0; i < daysInTheLastWeek; i++) {
             calendar += `<td class="prev-month">${lastMonthLastSunday + i}</td>`;
+            daysInTheWeekCounter ++;
         }
     }
 
@@ -38,7 +39,7 @@ function createMonthlyCalendar(input) {
     }
 
 
-    console.log(calendar)
+    console.log(daysInTheWeekCounter)
 }
 
 createMonthlyCalendar([24, 1, 2018]);
